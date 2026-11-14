@@ -18,3 +18,16 @@ Tässä pääasiallinen tietokohde on ruokaresepti ja toissijainen tietokohde on
 
 
 Ominaisuudet kopioitu esimerkkiaiheen ruokaresepti kohdasta. 
+
+
+
+Välipalautus 2 Update
+
+Tämän hetkisen vaiheen sovelluksessa on toimintoja: 
+- Käyttäjä pystyy luomaan tunnuksen ja kirjautumaan sisään. 
+- Käyttäjä pystyy kirjautumaan ulos.
+- Kirjautunut käyttäjä pystyy lisäämään reseptejä.
+- Käyttäjä pystyy muokkaamaan ja poistamaan omia reseptejään.
+- Käyttäjä pystyy selaamaan kaikkien käyttäjien lisäämiä reseptejä.
+- Käyttäjä pystyy etsimään reseptejä niiden nimellä. 
+- Resepti sisältää nimen, ainekset ja valmistusohjeen. 

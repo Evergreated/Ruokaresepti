@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Muokkaa reseptiä</title>
+</head>
+<body>
+    <h1>Muokkaa reseptiä</h1>
+
+    <form method="post">
+        <input type="hidden"
+               name="csrf_token"
+               value="{{ csrf_token }}">
+
+        <p>
+            <label for="title">Reseptin nimi:</label>
+            <input type="text" id="title" name="title"
+                   value="{{ recipe.title }}"
+                   maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="ingredients">Ainekset:</label>
+            <textarea id="ingredients" name="ingredients"
+                      rows="8" maxlength="5000"
+                      required>{{ recipe.ingredients }}</textarea>
+        </p>
+
+        <p>
+            <label for="instructions">Valmistusohje:</label>
+            <textarea id="instructions" name="instructions"
+                      rows="10" maxlength="10000"
+                      required>{{ recipe.instructions }}</textarea>
+        </p>
+
+        <button type="submit">Tallenna muutokset</button>
+    </form>
+
+    <p><a href="{{ url_for('index') }}">Peruuta</a></p>
+</body>
+</html>

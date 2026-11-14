@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekisteröidy</title>
+</head>
+<body>
+    <h1>Luo käyttäjätunnus</h1>
+
+    <form action="/register" method="post">
+        <input type="hidden"
+               name="csrf_token"
+               value="{{ csrf_token }}">
+
+        <p>
+            <label for="username">Käyttäjätunnus:</label>
+            <input type="text" id="username"
+                   name="username" required
+                   minlength="3" maxlength="30">
+        </p>
+
+        <p>
+            <label for="password">Salasana:</label>
+            <input type="password" id="password"
+                   name="password" required
+                   minlength="8" maxlength="128">
+        </p>
+
+        <button type="submit">Luo tunnus</button>
+    </form>
+
+    <p><a href="/">Takaisin etusivulle</a></p>
+</body>
+</html>
